@@ -1,0 +1,40 @@
+body{
+  font-family: "Red Hat Text", serif;
+}
+
+span:not(.location-region){
+  font-size: .9rem;
+  text-align: left;
+  color: hsl(0, 0%, 59%);
+  
+}
+div.info-container{
+  padding: 1rem;
+  position: relative;
+}
+div.info-container::after{
+  content: "";
+  height: 40%;
+  width: .1rem;
+  background-color: lightgrey;
+  opacity: .45;
+  
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+}
+p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: .5rem;
+}
+#bg-pattern-top{
+  background: url('/images/pattern-bg-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div#map{
+  height: 600px;
+  width: 100%;
+}
