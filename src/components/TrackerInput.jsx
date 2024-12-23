@@ -11,15 +11,16 @@ export default function TrackerInput({setIsSearching, setSearchingInfo}) {
 
         setIsSearching(true)
         setSearchingInfo(searchValue)
+        setSearchValue("")
     }
   
     return (
     <form action="" className="flex items-center w-full p-2 max-w-[50rem]" onSubmit={handleSubmit}>
-        <input type="search" placeholder="Search for any IP address or domain" className="border rounded-l-lg p-2 w-full" value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/>
-        <button className="border h-full rounded-r-lg bg-black text-white">
+        <input type="search" placeholder="Search for any IP address or domain" className="rounded-l-2xl p-[.7rem] w-full cursor-pointer" value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/>
+        <button className="h-full rounded-r-2xl bg-black text-white p-[0.231rem] hover:bg-gray-600 transition-all">
             <ChevronRight
                 size={40}
-                className="p-[0.65rem] font-bold"
+                className="p-[0.6rem] font-bold"
             />
         </button>
     </form>

@@ -29,7 +29,7 @@ p{
   margin-top: .5rem;
 }
 #bg-pattern-top{
-  background: url('/images/pattern-bg-desktop.png');
+  background: url('/img/pattern-bg-desktop.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
